@@ -186,11 +186,6 @@ typedef struct RTSPMessageHeader {
      * Content type header
      */
     char content_type[64];
-
-    /**
-     * SAT>IP com.ses.streamID header
-     */
-    char stream_id[64];
 } RTSPMessageHeader;
 
 /**
@@ -213,7 +208,6 @@ enum RTSPServerType {
     RTSP_SERVER_RTP,  /**< Standards-compliant RTP-server */
     RTSP_SERVER_REAL, /**< Realmedia-style server */
     RTSP_SERVER_WMS,  /**< Windows Media server */
-    RTSP_SERVER_SATIP,/**< SAT>IP server */
     RTSP_SERVER_NB
 };
 
